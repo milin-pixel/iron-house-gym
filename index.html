@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IRON HOUSE | Fitness</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101010;
+  color: white;
+}
+
+nav {
+  padding: 24px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.logo { color: #c5ff41; font-size: 24px; font-weight: bold; }
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hero {
+  min-height: 75vh;
+  padding: 100px 8%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #101010, #101010dd, #10101055),
+  url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80") center/cover;
+}
+
+h1 {
+  font-size: clamp(42px, 7vw, 76px);
+  margin: 0 0 20px;
+}
+
+h1 span { color: #c5ff41; }
+
+p { color: #c6c6c6; line-height: 1.8; }
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #c5ff41;
+  color: #101010;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+section { padding: 60px 8%; }
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #1b1b1b;
+  padding: 25px;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+.card h3 { color: #c5ff41; }
+
+@media (max-width: 650px) {
+  nav { padding: 20px 5%; }
+  nav a { margin-left: 8px; font-size: 13px; }
+  .hero { padding: 70px 6%; }
+  .features { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">IRON HOUSE</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+  </div>
+</nav>
+
+<main id="home" class="hero">
+  <div>
+    <p>BUILT THROUGH DISCIPLINE</p>
+    <h1>STRONGER<br><span>EVERY DAY.</span></h1>
+    <p>Train hard. Stay focused. Become your strongest self.</p>
+    <a class="btn" href="#services">EXPLORE OUR GYM</a>
+  </div>
+</main>
+
+<section id="services">
+  <h2>TRAIN WITH PURPOSE</h2>
+  <div class="features">
+    <div class="card">
+      <h3>Strength</h3>
+      <p>Build strength with a structured training routine.</p>
+    </div>
+    <div class="card">
+      <h3>Fitness</h3>
+      <p>Improve fitness with consistent practice.</p>
+    </div>
+    <div class="card">
+      <h3>Community</h3>
+      <p>Stay motivated and work towards your goals.</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
